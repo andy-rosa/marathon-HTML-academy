@@ -1,0 +1,119 @@
+.page-header{display: none;}
+/* .page-header {
+    position: fixed;
+    left: calc(100wp - 700px);
+    width: 1400px;
+    display: flex;
+    justify-content: center;
+    margin-top: 34px;
+}
+
+.page-navigation-bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigate-item-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wraper-logotype {
+    display: inline-block;
+    width: 200px;
+} */
+
+.page-lid-section {
+    width: 1400px;
+    height: 715px;
+
+    margin: 0 auto;
+    padding-left: 182px;
+
+    background-image: url(../pictures/background_image/first-screen-background.jpg);
+    background-size: cover;
+    background-color: #efe6e4;
+}
+
+.lid-text {
+    display: inline-block;
+    
+    width: 534px;
+    margin-top: 152px;
+    margin-bottom: 24px;
+
+    color: #533738;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 62px;
+}
+
+.normal-body-text {
+    color: #533738;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.lid-text + .normal-body-text {
+    display: block;
+    width: 492px;
+}
+
+.btn-request {
+    display: inline-block;
+    width: 310px;
+    height: 74px;
+    box-sizing: border-box;
+
+    margin-top: 21px;
+    padding-top: 25px;
+
+    text-decoration: none;
+
+    background: #cc8b86;
+    color: #533738;
+    
+    text-align: center;
+    line-height: 24px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.about-us {
+    width: 1400px;
+    margin: 65px auto 21px ;
+}
+
+.image-about {
+    margin-left: 182px;
+    margin-right: 64px;
+}
+
+.about-us .normal-body-text {
+    display: inline-block;
+    width: 528px;
+}
+
+
+.center {
+    display: block;
+    text-align: center;    
+    margin-bottom: 40px;
+}
+
+.title-h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #533738;
+}
