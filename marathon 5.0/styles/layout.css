@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Montserrat';
-    src: url(../fonts/Montserrat-Regular.woff2),
-        url(../fonts/Montserrat-Regular.woff);
+    src: url(../fonts/Montserrat-Regular.woff2) format(woff2),
+    url(../fonts/Montserrat-Regular.woff) format(woff);
     font-style: normal;
     font-weight: 400;
     font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src: url(../fonts/Montserrat-Italic.woff2),
-        url(../fonts/Montserrat-Italic.woff);
+    src: url(../fonts/Montserrat-Italic.woff2) format(woff2),
+    url(../fonts/Montserrat-Italic.woff) format(woff);
     font-style: italic;
     font-weight: 400;
     font-display: swap;
@@ -18,8 +18,8 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src: url(../fonts/Montserrat-Medium.woff2),
-        url(../fonts/Montserrat-Medium.woff);
+    src: url(../fonts/Montserrat-Medium.woff2) format(woff2),
+    url(../fonts/Montserrat-Medium.woff) format(woff);
     font-style: normal;
     font-weight: 500;
     font-display: swap;
@@ -29,6 +29,9 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
+    background-color: #efe6e4;
+    width: 1400px;
+    margin: 0 auto;
 }
 
 .page-header{display: none;}
@@ -56,8 +59,7 @@ body {
     width: 200px;
 } */
 
-.page-lid-section {
-    width: 1400px;
+.page-main {
     height: 715px;
 
     margin: 0 auto;
@@ -68,7 +70,7 @@ body {
     background-color: #efe6e4;
 }
 
-.lid-text {
+.main-heading {
     display: inline-block;
     
     width: 534px;
@@ -78,15 +80,17 @@ body {
     color: #533738;
     font-size: 50px;
     line-height: 62px;
+    font-weight: 400;
 }
 
 .normal-body-text {
     color: #533738;
     font-size: 18px;
     line-height: 30px;
+    margin: 0;
 }
 
-.lid-text + .normal-body-text {
+.main-heading + .normal-body-text {
     display: block;
     width: 492px;
 }
@@ -109,6 +113,7 @@ body {
     line-height: 24px;
     font-weight: 500;
     font-size: 20px;
+    border: 0px;
 }
 
 .about-us {
@@ -138,4 +143,59 @@ body {
     line-height: 50px;
     text-transform: uppercase;
     color: #533738;
+    font-weight: 400;
+}
+
+.white {
+    color: #ffffff;
+    text-align: center;
+}
+
+.statistic-flex {
+    background-color: #8d7370;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 269px;
+    margin-top: 21px;
+}
+
+
+.wrap-stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+}
+
+.wrap-stats:first-child {
+    margin-left: 182px;
+}
+.wrap-stats:last-child {
+    margin-right: 180px;
+}
+
+.caption-stats-number {
+    font-weight: 500;
+    font-size: 30px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 8px;
+    margin-bottom: 81px;
+}
+
+.list-item-stats {
+    margin-top: 85px;
+    font-size: 50px;
+    line-height: 62px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.wrapper-flex {
+    display: flex;
+    align-items: flex-start;
 }

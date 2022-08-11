@@ -10,50 +10,51 @@
 <body>
     <header class="page-header">
         <nav class="page-navigation-bar">
-        <div class="wraper-logotype">
-            <img src="images/logo.png" alt="Логотип" width="50px" height="50px">
-            <a class="logo" href="#">SCANDI</a>
-        </div>
+            <div class="wraper-logotype">
+                <img src="images/logo.png" alt="Логотип компании SCANDI – графическое изображение торшера" width="50px" height="50px">
+                <a class="logo" href="#">SCANDI</a>
+            </div>
             <ul class="navigate-item-list">
-                <li><a href="#">О компании</a></li>
-                <li><a href="#">Портфолио</a></li>
-                <li><a href="#">Команда</a></li>
-                <li><a href="#">Как мы работаем</a></li>
-                <li><a href="#">Отзывы клиентов</a></li>
-                <li><a href="#">Оставить заявку</a></li>
+                <li class="nav-item"><a href="#about">О компании</a></li>
+                <li class="nav-item"><a href="#works">Портфолио</a></li>
+                <li class="nav-item"><a href="#team">Команда</a></li>
+                <li class="nav-item"><a href="#process-list">Как мы работаем</a></li>
+                <li class="nav-item"><a href="#reviews">Отзывы клиентов</a></li>
+                <li class="nav-item"><a href="#form">Оставить заявку</a></li>
             </ul>
-            <a class="phone-number" href="tel:+">+7 (981) 857-46-24</a>
+            <a class="phone-number" href="tel:+79818574624">+7 (981) 857-46-24</a>
         </nav>
     </header>
-    <main class="page-lid-section">
-        <h1 class="lid-text">Поможем сделать вашу квартиру уютнее</h1>
+    <main class="page-main">
+        <h1 class="main-heading">Поможем сделать вашу квартиру уютнее</h1>
         <p class="normal-body-text">Подбираем текстиль, мебель и&nbsp;аксессуары под&nbsp;ваш&nbsp;интерьер, находим магазины и&nbsp;помогаем&nbsp;организовать доставку</p>
         <a class="btn-request" href="#">Оставить заявку</a>
     </main>
     <section class="about-us">
         <h2 class="title-h2 center">О нас</h2>
         <div class="wrapper-flex">
-            <img class="image-about" src="pictures/about_us/team_atmosphere.jpg" alt="Фотография с посудой на европейском текстиле" width="445px"
-height="465px">
-            <p class="normal-body-text">Премиальный европейский текстиль — одно из самых главных направлений работы коллектива. Создавать неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — вот то,  что по-настоящему вдохновляет дизайнеров нашей студии.</p>
-            <p class="normal-body-text">Наш коллектив сделает все, чтобы после сотрудничества с нами, Вам было приятно сказать:</p>
-            <q class="your-quote">« Да! Это именно то, что действительно достойно моего дома!»</q>
+            <img class="image-about" src="pictures/about_us/team_atmosphere.jpg" alt="Фотография с посудой на европейском текстиле" width="445px" height="465px">
+            <p class="normal-body-text">Премиальный европейский текстиль — одно из самых главных направлений работы коллектива. Создавать неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — вот то,  что по-настоящему вдохновляет дизайнеров нашей студии.
+            <br><br>
+            Наш коллектив сделает все, чтобы после сотрудничества с нами, Вам было приятно сказать:
+            <br>
+            « Да! Это именно то, что действительно достойно моего дома!»</p>
         </div>
-        <ul class="statistic-flex">
-            <list class="wrap-stats">
-                <p class="number">5</p>
-                <p class="caption_stats_number">лет опыта</p>
-            </list>
-            <list class="wrap-stats">
-                <p class="number">100</p>
-                <p class="caption-stats-number">проектов</p>
-            </list>
-            <list class="wrap-stats">
-                <p class="number">10</p>
-                <p class="caption-stats-number">наград</p>
-            </list>
-        </ul>
     </section>
+    <ul class="statistic-flex">
+        <list class="wrap-stats">
+            <p class="list-item-stats  white">5</p>
+            <p class="caption-stats-number white">лет опыта</p>
+        </list>
+        <list class="wrap-stats">
+            <p class="list-item-stats  white">100</p>
+            <p class="caption-stats-number white">проектов</p>
+        </list>
+        <list class="wrap-stats">
+            <p class="list-item-stats  white">10</p>
+            <p class="caption-stats-number white">наград</p>
+        </list>
+    </ul>
     <section class="portfolio">
         <h2 class="title-h2 start">Наши работы</h2>
         <div class="grid_container">
@@ -134,7 +135,7 @@ height="465px">
         <form class="form-request" action="#URL" method="post">
             <input class="name-request" name="request" type="text" placeholder="Ваше имя" required>
             <input class="phone-request" name="request" type="tel" placeholder="Введите телефон" required>
-            <button class="submit">Оставить заявку</button>
+            <button class="button btn-submit">Оставить заявку</button>
         </form>
         <img class="map-adress" src="pictures/map_adress.jpg" alt="Карта с местоположением" width="590px" height="624px">
     </article>
