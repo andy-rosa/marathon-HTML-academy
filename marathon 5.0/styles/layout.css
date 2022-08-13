@@ -299,3 +299,14 @@ gap: 15px 20px;
     border-radius: 100px;
     background-color: #8d7370;
 }
+
+.reviews-flex {
+    display: flex;
+    flex-direction: column;
+    width: 407px;
+    list-style: none;
+}
+
+.reviews-item {
+    margin-bottom: 30px;
+}
