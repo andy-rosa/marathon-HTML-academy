@@ -40,6 +40,8 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
+
+    z-index: 9999;
 }
 
 .page-header a {
@@ -112,13 +114,12 @@ body {
 }
 
 .btn-request {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 310px;
     height: 74px;
     box-sizing: border-box;
-
-    margin-top: 21px;
-    padding-top: 25px;
 
     text-decoration: none;
 
@@ -232,6 +233,8 @@ gap: 15px 20px;
 
 .section-portfolio {
     margin-top: 65px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .portfolio {
@@ -374,6 +377,9 @@ gap: 15px 20px;
 
 .request-action {
     background-color: #8D7370;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
 }
 
 .name-request {
@@ -407,9 +413,39 @@ gap: 15px 20px;
     width: 508px;
     color: #fff;
     background-color: #8D7370;
-    margin-bottom: 25px;
+    margin-bottom: 31px;
 }
 
 .phone-request::placeholder {
     color: #F6EDE9;
+}
+
+.page-main p.normal-body-text {
+    margin-bottom: 21px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 510px;
+    margin-left: 180px;
+    margin-right: 20px;
+}
+
+.from-form {
+    display: inline-block;
+    text-align: start;
+}
+
+h2.from-form {
+    margin-bottom: 24px;
+}
+
+p.from-form {
+    margin-bottom: 44px;
+    opacity: .6;
+}
+
+.page-footer {
+
 }
