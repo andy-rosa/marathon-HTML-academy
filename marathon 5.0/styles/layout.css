@@ -75,6 +75,7 @@ body {
 
 .link-nav-item {
     color: #533738;
+    text-decoration: none;
 }
 
 .page-main {
@@ -447,5 +448,16 @@ p.from-form {
 }
 
 .page-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 34px;
+    margin-bottom: 40px;
+}
 
+.wrap_element {
+    display: flex;
+}
+
+.wrap_element .link-nav-item {
+    margin-right: 42px;
 }
