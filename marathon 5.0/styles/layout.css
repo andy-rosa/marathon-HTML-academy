@@ -28,30 +28,52 @@ body {
     margin: 0 auto;
 }
 
-.page-header{display: none;}
-/* .page-header {
+.page-header {
     position: fixed;
     left: calc(100wp - 700px);
     width: 1400px;
     display: flex;
     justify-content: center;
     margin-top: 34px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.page-header a {
+    text-decoration: none;
 }
 
 .page-navigation-bar {
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 1400px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .navigate-item-list {
     display: flex;
     justify-content: space-between;
+    list-style: none;
+}
+
+.nav-item {
+    margin-right: 26px;
 }
 
 .wraper-logotype {
-    display: inline-block;
-    width: 200px;
-} */
+    display: flex;
+    width: 100px;
+    align-items: center;
+} 
+
+.link-nav-item {
+    color: #533738;
+}
 
 .page-main {
     height: 715px;
@@ -352,22 +374,21 @@ gap: 15px 20px;
 
 .request-action {
     background-color: #8D7370;
-    ;
 }
 
 .name-request {
     -webkit-appearance: none;
-display: block;
-padding-bottom: 6px;
-font-weight: 400;
-font-size: 18px;
-line-height: 30px;
-border: none;
-border-bottom: 1px solid #ffffff;
-width: 508px;
-color: #fff;
-background-color: #8D7370;
-margin-bottom: 25px;
+    display: block;
+    padding-bottom: 6px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    width: 508px;
+    color: #fff;
+    background-color: #8D7370;
+    margin-bottom: 25px;
 }
 
 .name-request::placeholder {
@@ -376,17 +397,17 @@ margin-bottom: 25px;
 
 .phone-request {
     -webkit-appearance: none;
-display: block;
-padding-bottom: 6px;
-font-weight: 400;
-font-size: 18px;
-line-height: 30px;
-border: none;
-border-bottom: 1px solid #ffffff;
-width: 508px;
-color: #fff;
-background-color: #8D7370;
-margin-bottom: 25px;
+    display: block;
+    padding-bottom: 6px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    width: 508px;
+    color: #fff;
+    background-color: #8D7370;
+    margin-bottom: 25px;
 }
 
 .phone-request::placeholder {
