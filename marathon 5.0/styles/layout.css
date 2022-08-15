@@ -440,6 +440,7 @@ gap: 15px 20px;
 
 h2.from-form {
     margin-bottom: 24px;
+    margin-top: 50px;
 }
 
 p.from-form {
@@ -454,10 +455,9 @@ p.from-form {
     margin-bottom: 40px;
 }
 
-.wrap_element {
+.wrap-element {
     display: flex;
-}
-
-.wrap_element .link-nav-item {
-    margin-right: 42px;
+    justify-content: start;
+    align-items: center;
+    gap: 24px;
 }
