@@ -33,6 +33,7 @@ body {
     left: calc(100wp - 700px);
     width: 1400px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: 34px;
 
@@ -53,12 +54,14 @@ body {
     padding-right: 100px;
     width: 1400px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
 
 .navigate-item-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     list-style: none;
 }
