@@ -83,13 +83,13 @@ body {
 
 .page-main {
     height: 715px;
-
-    margin: 0 auto;
+    
     padding-left: 182px;
 
     background-image: url(../pictures/background_image/first-screen-background.jpg);
     background-size: cover;
     background-color: #efe6e4;
+    
 }
 
 .main-heading {
@@ -145,6 +145,7 @@ body {
 .image-about {
     margin-left: 182px;
     margin-right: 64px;
+    
 }
 
 .about-us .normal-body-text {
