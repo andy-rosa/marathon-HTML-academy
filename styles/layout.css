@@ -30,7 +30,6 @@ body {
 
 .page-header {
     position: fixed;
-    left: calc(100wp - 700px);
     width: 1400px;
     display: flex;
     flex-wrap: wrap;
@@ -129,6 +128,8 @@ body {
 
     background: #cc8b86;
     color: #533738;
+
+    transition: background-color .2s ease-in;
     
     text-align: center;
     line-height: 24px;
@@ -238,12 +239,14 @@ gap: 15px 20px;
 
 .section-portfolio {
     margin-top: 65px;
+    margin-bottom: 65px;
     padding-left: 100px;
     padding-right: 100px;
 }
 
 .portfolio {
     width: 100%;
+    height: 100%;
 }
 
 .btn-more {
@@ -260,7 +263,10 @@ gap: 15px 20px;
     content: url(../images/vector/Arrows/arrow_more.svg);
     position: absolute;
     margin-left: 10px;
-    
+}
+
+.btn-more:hover {
+    text-decoration: underline;
 }
 
 .team,
@@ -268,6 +274,7 @@ gap: 15px 20px;
     background-color: #e2c4ba;
     margin: 0;
 }
+
 
 .team .title-h2 {
     padding-top:  50px;
@@ -380,6 +387,11 @@ gap: 15px 20px;
     margin-bottom: 12px;
 }
 
+.reviews {
+    margin-top: 65px;
+    margin-bottom: 65px;
+}
+
 .request-action {
     background-color: #8D7370;
     margin-top: 30px;
@@ -400,10 +412,12 @@ gap: 15px 20px;
     color: #fff;
     background-color: #8D7370;
     margin-bottom: 25px;
+    outline-style: none;
 }
 
 .name-request::placeholder {
     color: #F6EDE9;
+    opacity: .7;
 }
 
 .phone-request {
@@ -419,10 +433,12 @@ gap: 15px 20px;
     color: #fff;
     background-color: #8D7370;
     margin-bottom: 31px;
+    outline-style: none;
 }
 
 .phone-request::placeholder {
     color: #F6EDE9;
+    opacity: .7;
 }
 
 .page-main p.normal-body-text {
@@ -464,4 +480,20 @@ p.from-form {
     justify-content: start;
     align-items: center;
     gap: 24px;
+}
+
+.btn-request:hover {
+    background-color: #EDE4B4;
+}
+
+.navigate-item-list .link-nav-item:hover {
+    text-decoration: underline;
+}
+.phone-link-nav-item:hover {
+    text-decoration: underline;
+}
+
+.phone-link-nav-item {
+    color: #533738;
+    text-decoration: none;
 }
