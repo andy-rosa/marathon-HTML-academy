@@ -1,3 +1,5 @@
+/*  Подключение шрифта */
+
 @font-face {
     font-family: "Montserrat";
     src: local("Montserrat Medium"), local("Montserrat-Medium"),
@@ -18,6 +20,88 @@
     font-display: swap;
 }
 
+/* Стиль текста */
+
+.main-heading {
+    display: inline-block;
+    width: 534px;
+    margin-top: 152px;
+    margin-bottom: 24px;
+
+    color: #533738;
+    font-size: 50px;
+    line-height: 62px;
+    font-weight: 400;
+}
+
+.main-heading + .normal-body-text {
+    display: block;
+    width: 492px;
+}
+
+.normal-body-text {
+    margin: 0;
+    
+    color: #533738;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.center {
+    display: block;
+    text-align: center;    
+    margin-bottom: 40px;
+}
+
+.title-h2 {
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #533738;
+    font-weight: 400;
+}
+
+.title-h3 {
+    color: #533738;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+}
+
+.white {
+    color: #ffffff;
+    text-align: center;
+}
+
+.about-us .normal-body-text {
+    display: inline-block;
+    width: 528px;
+}
+
+.how-we-work .title-h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 35px;
+}
+
+.team .title-h2 {
+    padding-top:  50px;
+}
+
+
+.wrap-text-about .normal-body-text:first-child {
+    margin-bottom: 35px;
+}
+
+.visually-hidden .normal-body-text {
+    padding-left: 35px;
+    padding-right: 35px;
+    
+    text-align: start;
+}
+
+/* Центрирование */
 
 body {
     width: 1400px;
@@ -29,6 +113,8 @@ body {
     
     background-color: #efe6e4;
 }
+
+/* Хедер */
 
 .page-header {
     position: fixed;
@@ -92,30 +178,7 @@ body {
     background-color: #efe6e4;
 }
 
-.main-heading {
-    display: inline-block;
-    width: 534px;
-    margin-top: 152px;
-    margin-bottom: 24px;
-
-    color: #533738;
-    font-size: 50px;
-    line-height: 62px;
-    font-weight: 400;
-}
-
-.normal-body-text {
-    margin: 0;
-    
-    color: #533738;
-    font-size: 18px;
-    line-height: 30px;
-}
-
-.main-heading + .normal-body-text {
-    display: block;
-    width: 492px;
-}
+/* Стиль кнопок */
 
 .btn-request {
     display: flex;
@@ -137,8 +200,83 @@ body {
 
     transition: background-color 0.2s ease-in;
     
-
 }
+
+.btn-request:hover {
+    background-color: #ede4B4;
+}
+
+.btn-more {
+    position: relative;
+
+    margin-top:  40px;
+
+    color: #533738;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+}
+
+.btn-more::after {
+    position: absolute;
+
+    margin-left: 10px;
+
+    content: url("../images/vector/Arrows/arrow_more.svg");
+}
+
+.btn-more:hover {
+    text-decoration: underline;
+}
+
+
+.btnArrow-left {
+    position: absolute;
+    top: 50%;
+    left: 182px;
+    z-index: 100;
+
+    width: 72px;
+    height: 72px;
+
+    background-image: url("../images/vector/Arrows/btnArrow-left.svg");
+    background-size: auto;
+    border-radius: 50px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #cc8b86;
+    border: none;
+
+    transition: background-color 0.1s ease-in;
+}
+
+.btnArrow-right {
+    position: absolute;
+    top: 50%;
+    right: 146px;
+    z-index: 100;
+
+    width: 72px;
+    height: 72px;
+
+    background-image: url("../images/vector/Arrows/btnArrow-right.svg");
+    background-size: auto;
+    border-radius: 50px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #cc8b86;
+    border: none;
+    
+    transition: background-color 0.1s ease-in;
+}
+
+.btnArrow-right:hover,
+.btnArrow-left:hover {
+    background-color: #8d7370;
+}
+
+/* О нас */
 
 .about-us {
     width: 1400px;
@@ -149,39 +287,6 @@ body {
     margin-left: 182px;
     margin-right: 64px;
     
-}
-
-.about-us .normal-body-text {
-    display: inline-block;
-    width: 528px;
-}
-
-
-.center {
-    display: block;
-    text-align: center;    
-    margin-bottom: 40px;
-}
-
-.title-h2 {
-    font-size: 40px;
-    line-height: 50px;
-    text-transform: uppercase;
-    color: #533738;
-    font-weight: 400;
-}
-
-.title-h3 {
-    color: #533738;
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 37px;
-    text-align: center;
-}
-
-.white {
-    color: #ffffff;
-    text-align: center;
 }
 
 .statistic-flex {
@@ -236,15 +341,17 @@ body {
     align-items: flex-start;
 }
 
-.grid_container {
+.grid-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 15px 20px;
 }
 
 .image-five-column {
-    grid-column: span 5;
     position: relative;
+
+    margin: 0;
+    grid-column: span 5;
 }
 
 .visually-hidden {
@@ -274,6 +381,7 @@ body {
 .image-seven-column {
     position: relative;
 
+    margin: 0;
     grid-column: span 7;
 }
 
@@ -295,40 +403,11 @@ body {
     height: 100%;
 }
 
-.btn-more {
-    position: relative;
-
-    margin-top:  40px;
-
-    color: #533738;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 37px;
-}
-
-.btn-more::after {
-    position: absolute;
-
-    margin-left: 10px;
-
-    content: url("../images/vector/Arrows/arrow_more.svg");
-}
-
-.btn-more:hover {
-    text-decoration: underline;
-}
-
 .team,
 .how-we-work {
     margin: 0;
 
     background-color: #e2c4ba;
-}
-
-
-.team .title-h2 {
-    padding-top:  50px;
 }
 
 .teams {
@@ -345,12 +424,6 @@ body {
 
 .img-person {
     margin-bottom: 10px;
-}
-
-.how-we-work .title-h2 {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 35px;
 }
 
 .list-how-we-work {
@@ -425,51 +498,6 @@ body {
 
     margin-top: 65px;
     margin-bottom: 65px;
-}
-
-.btnArrow-left {
-    position: absolute;
-    top: 50%;
-    left: 182px;
-    z-index: 100;
-
-    width: 72px;
-    height: 72px;
-
-    background-image: url("../images/vector/Arrows/btnArrow-left.svg");
-    background-size: auto;
-    border-radius: 50px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-color: #cc8b86;
-    border: none;
-
-    transition: background-color 0.1s ease-in;
-}
-
-.btnArrow-right {
-    position: absolute;
-    top: 50%;
-    right: 146px;
-    z-index: 100;
-
-    width: 72px;
-    height: 72px;
-
-    background-image: url("../images/vector/Arrows/btnArrow-right.svg");
-    background-size: auto;
-    border-radius: 50px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-color: #cc8b86;
-    border: none;
-    
-    transition: background-color 0.1s ease-in;
-}
-
-.btnArrow-right:hover,
-.btnArrow-left:hover {
-    background-color: #8d7370;
 }
 
 .request-action {
@@ -573,10 +601,6 @@ p.from-form {
     gap: 24px;
 }
 
-.btn-request:hover {
-    background-color: #ede4B4;
-}
-
 .navigate-item-list .link-nav-item:hover {
     text-decoration: underline;
 }
@@ -592,15 +616,4 @@ p.from-form {
 .wrap-text-about {
     display: flex;
     flex-direction: column;
-}
-
-.wrap-text-about .normal-body-text:first-child {
-    margin-bottom: 35px;
-}
-
-.visually-hidden .normal-body-text {
-    padding-left: 35px;
-    padding-right: 35px;
-    
-    text-align: start;
 }
